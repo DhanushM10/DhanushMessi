@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Parameters]">
+  <parameter name="password" value="messi10"/>
+  <parameter name="emailId" value="dhanush"/>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="org.testing.TestNGOrder1">
+        <methods>
+          <include name="startTime"/>
+          <include name="tc11" invocation-numbers="0"/>
+          <include name="launchingChrome"/>
+        </methods>
+      </class> <!-- org.testing.TestNGOrder1 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Parameters] -->
